@@ -76,11 +76,11 @@ def gflags_library(hdrs=[], srcs=[], threads=1):
         "-DGFLAGS_IS_A_DLL=0",
     ]
     linkopts = []
-    if threads:
-        linkopts.append("-lpthread")
-    else:
-        name += "_nothreads"
-        copts.append("-DNO_THREADS")
+#    if threads:
+#        linkopts.append("-lpthread")
+#    else:
+    name += "_nothreads"
+    copts.append("-DNO_THREADS")
     native.cc_library(
         name       = name,
         hdrs       = hdrs,
