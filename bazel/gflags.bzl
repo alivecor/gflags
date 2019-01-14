@@ -70,7 +70,7 @@ def gflags_library(hdrs=[], srcs=[], threads=1):
         "-DHAVE_FNMATCH_H",
         "-DHAVE_STRTOLL",
         "-DHAVE_STRTOQ",
-        "-DHAVE_PTHREAD",
+#        "-DHAVE_PTHREAD",
         "-DHAVE_RWLOCK",
         "-DGFLAGS_INTTYPES_FORMAT_C99",
         "-DGFLAGS_IS_A_DLL=0",
